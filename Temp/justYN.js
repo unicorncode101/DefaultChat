@@ -113,41 +113,8 @@ return   "https://ynassets.younow.com/user/live/" + data + "/" + data +".jpg";
         {
 			
 			
-		giftsGiven = "";
-		saveData ="";
+	
 		
-		let tempUsername = data.message.stageGifts[0].profileUrlString
-		var giftids = data.message.stageGifts[0].giftId;
-		var onlydata = data.message.stageGifts[0];
-			
-			if((onlydata.extraData.value !=null ) && (onlydata.extraData.value >1)){
-				
-								
-				giftsGiven = "<div style='color:white'>"+" SKU: " +data.message.stageGifts[0].SKU+" : " + data.message.stageGifts[0].userId + " : " +data.message.stageGifts[0].extraData.value +"</div>";
-				//console.log(data.message.stageGifts[0])
-				
-				savedData ="'"  +data.message.stageGifts[0].SKU+" : " + data.message.stageGifts[0].userId + " : " +data.message.stageGifts[0].extraData.value +"'," ;
-				
-				displayIt(giftsGiven);
-				//PostLikes("'" +data.message.stageGifts[0].SKU +" : " + data.message.stageGifts[0].userId + " : " +data.message.stageGifts[0].extraData.value +"'," );
-			}
-			else if((onlydata.extraData.numOfLikes !=null )&& (onlydata.extraData.numOfLikes >1)) {
-			
-				giftsGiven = "<div style='color:white'> SKU :" +data.message.stageGifts[0].SKU+ " : "+data.message.stageGifts[0].userId
-				+ ":" + onlydata.extraData.numOfLikes +"</div>";
-			//	console.log(data.message.stageGifts[0])
-			 
-				displayIt(giftsGiven);
-				//PostLikes("'"+data.message.stageGifts[0].SKU+ " : "+data.message.stageGifts[0].userId+ ":" + onlydata.extraData.numOfLikes +"',");
-			}
-			
-			
-			else{
-				
-			//	displayIt(onlydata); 
-				
-				
-			}
 		
 
 		
